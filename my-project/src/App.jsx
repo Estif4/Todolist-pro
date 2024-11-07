@@ -70,7 +70,7 @@ function App() {
   return (
     <div className="flex flex-row">
       <Aside PageSwitcher={PageSwitcher} projectStorage={projectStorage} projectswitcher={projectswitcher} />
-      {activePage === 'DefaultPage' && <DefaultDisplay />}
+      {activePage === 'DefaultPage' && <DefaultDisplay setActivepage={setActivepage} />}
       {activePage === 'InputForm' && (
         <InputForm
           PageSwitcher={PageSwitcher}
