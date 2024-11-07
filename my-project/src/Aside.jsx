@@ -16,7 +16,7 @@ export default function Sidebar({ PageSwitcher, projectStorage, projectswitcher 
         <div className="w-full flex flex-col justify-start items-start space-y-3 mt-4  ">
           {projectStorage.map((item, index) => (
             <div
-              className="text-gray-300 text-left tracking-wider font-serif text-l hover:text-white cursor-pointer px-2  mt-4 border border-gray border-gray-800  bg-gray-800"
+              className="break-all w-full text-gray-300 text-left tracking-wider font-serif text-l hover:text-white cursor-pointer px-2  mt-4 border border-gray border-gray-800  bg-gray-800"
               key={item.id}
               onClick={() => projectswitcher(item.id)}
             >

@@ -60,7 +60,7 @@ export default function DisplayProject({
       <div className="flex flex-col w-16 sm:w-[700px] space-y-10 p-4 rounded-lg">
         <div className="flex justify-between items-start space-x-16 mb-4">
           <div className="flex flex-col">
-            <div className="font-bold text-3xl">{Title}</div>
+            <div className="font-bold text-3xl whitespace-break-spaces overflow-hidden w-28">{Title}</div>
             <div className="text-gray-500 text-sm">{date}</div>
           </div>
           <button
@@ -74,7 +74,7 @@ export default function DisplayProject({
           </button>
         </div>
 
-        <div className="text-sm text-gray-700 leading-relaxed break-words">
+        <div className="text-sm text-gray-700 ">
           {description}
         </div>
 
@@ -96,7 +96,7 @@ export default function DisplayProject({
               Add 
             </button>
           </div>
-          <div className="bg-yellow-50 w-48 sm:w-[500px] h-64 overflow-y-auto mr-2 p-2">
+          <div className="bg-yellow-50 w-52 sm:w-[500px] h-64 overflow-y-auto mr-2 p-2">
             {tasks.length > 0 ? (
               tasks.map((item, index) => (
                 <div key={index} className="p-2 border-b flex flex-row justify-between">
