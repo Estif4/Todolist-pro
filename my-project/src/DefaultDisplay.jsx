@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import image from './assets/result.png';
+import image from './assets/result1.png';
 
 const DefaultDisplay = forwardRef((props, ref) => {
   const { setActivepage } = props; // Destructure the setActivePage function from props
